@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:login_app_3/pages/home_page.dart';
+import 'package:login_app_3/pages/join_page.dart';
 import 'package:login_app_3/pages/login_page.dart';
 
 void main() {
@@ -13,10 +14,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: buildThemeData(),
-      initialRoute: "/login",
+      initialRoute: "/join",
       routes: {
         "/login": (context) => LoginPage(),
         "/home": (context) => HomePage(),
+        "/join": (context) => JoinPage(),
       },
     );
   }
